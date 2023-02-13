@@ -1,0 +1,51 @@
+/* ----- create product */
+.user-createUser{
+
+}
+.user-createUser > span{
+    display: flex;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6b6b6b;
+    background-color: rgb(192, 204, 244);
+}
+.user-create-user{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 0rem .5rem 1rem 1rem;
+    padding: 1rem;
+    background-color: rgb(158, 212, 212);
+}
+.user-create-user input, select{
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    font-size: 14px;
+    
+    width: 100%;
+}
+.select-type{
+    margin-bottom: 1rem;
+}
+.user-create-user button{
+    background: white;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .7rem 5rem;
+    border: 1px solid #333;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+.user-create-user button:hover{
+    background: #1890ff;
+    color: white;
+    border: none;
+    transition: .3s;
+}
+.user-create-user .filter-menu-firm{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

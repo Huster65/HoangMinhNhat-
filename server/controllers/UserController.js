@@ -14,8 +14,8 @@ export const registerUser = expressAsyncHandler(async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        address: '',
-        phone: '',
+        address: req.body.address,
+        phone: req.body.phone,
         isAdmin: false,
     })
     const createUser = user.save();
@@ -58,3 +58,52 @@ export const DeleteUser = expressAsyncHandler(async (req, res) => {
         res.send({message: 'user not exists'})
     }
 })
+export const UpdateUser = expressAsyncHandler(async (req, res) => {
+    const user = await UserModel.findById(req.body._id);
+  if (user) {
+    //user._id =req.body._id;
+    user.name = req.body.name;
+    user.email = req.body.email;
+    user.password = req.body.password;
+    user.address = req.body.address;
+    user.phone = req.body.phone;
+    const updateUser = await user.save();
+    if (updateUser) {  
+      res.send("update success"); 
+    }
+  }
+  return res.send("update fail");
+  });
+
+
+export const findUserById = expressAsyncHandler(async (req, res) => {
+    const user = await UserModel.findById({_id: req.params.id})
+    
+    if(user){
+        res.send(user)
+    }else{
+        res.send({message: 'user not found'})
+    }
+})
+
+export const AddUser = expressAsyncHandler(async (req, res) => {
+    
+    const user = new UserModel({
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+        address: req.body.address,
+        phone: req.body.phone,
+        isAdmin: false,
+      
+    });
+    const newUser = await user.save();
+  
+    if (newUser) {
+      return res
+        .status(201)
+        .send({ message: "New User Created", data: newUser });
+    } else {
+      res.send("error add user");
+    }
+  });

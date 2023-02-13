@@ -12,7 +12,7 @@ function Search(props) {
         <section id="hotsale Giuong">
             <div className="hotsale">
                 {
-                    products && products.length > 0 ? (<ListProduct HotSaleProducts={handlePercentDiscount(products)}></ListProduct>) : (<h2>ko tim thay sp</h2>)
+                    products && products.length > 0 ? (<ListProduct HotSaleProducts={handlePercentDiscount(products)}></ListProduct>) : (<h2>không tìm thấy sản phẩm</h2>)
                 }
             </div>
         </section>

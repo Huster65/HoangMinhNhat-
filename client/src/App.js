@@ -14,6 +14,7 @@ import MyOrderPage from './pages/MyOrderPage';
 import ChatPage from './pages/ChatPage';
 import PaymentPage from './pages/PaymentPage';
 import OrderSuccessPage from './pages/OrderSuccessPage'
+import ThongtinPage from './pages/ThongtinPage';
 
 function App() {
   return (
@@ -69,7 +70,9 @@ function App() {
         <Route path='/admin'>
           <AdminPage></AdminPage>
         </Route>
-
+        <Route path='/Updateuser/:id'>
+          <ThongtinPage></ThongtinPage>
+        </Route>
         {/* <Route path='*'>
           <HomePage></HomePage>
         </Route> */}

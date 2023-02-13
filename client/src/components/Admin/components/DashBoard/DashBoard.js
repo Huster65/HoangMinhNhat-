@@ -25,7 +25,7 @@ export default function DashBoard() {
           </div>
           <div className="dashboard-top-content">
             <li className="dashboard-top-content-avatar">
-              <img src="https://res.cloudinary.com/caokhahieu/image/upload/v1626334932/gediogbkwlg85kbbsamq.jpg"></img>
+              <img src="https://haycafe.vn/wp-content/uploads/2022/03/Anh-chan-dung-nam.jpg"></img>
               <span>Le The Thanh Dat</span>
             </li>
             <li className="dashboard-top-content-bell">

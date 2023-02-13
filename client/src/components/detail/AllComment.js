@@ -48,7 +48,7 @@ function AllComment(props) {
               <div style={{ display: "flex" }}>
                 {comment.isAdmin ? (
                   <div className="all-comment-info-name admin">
-                    <img src="https://CELLPHONES.com.vn/skin/frontend/default/cpsdesktop/images/media/logo.png"></img>
+                    <img src="https://inhoangkien.vn/wp-content/uploads/2020/04/Logo-B%E1%BB%99-Y-t%E1%BA%BF-01-e1585994422207-300x213.png"></img>
                   </div>
                 ) : (
                   <div className="all-comment-info-name">
@@ -202,7 +202,7 @@ function AllComment(props) {
             repCmt.status === true ? (
             <Col span={18} align='start' style={{ alignItems:'center'}}>
             <div className="comment-area" style={{display: 'flex', alignItems:'center'}}>
-              <textarea placeholder='Xin mời để lại câu hỏi, CELLPHONES sẽ trả lời trong 1h từ 8h - 22h mỗi ngày.' rows={10} cols={3}></textarea>
+              <textarea placeholder='Xin mời để lại câu hỏi, y te sẽ trả lời trong 1h từ 8h - 22h mỗi ngày.' rows={10} cols={3}></textarea>
             </div>
             <div className="comment-send">
               <button>Trả lời</button>

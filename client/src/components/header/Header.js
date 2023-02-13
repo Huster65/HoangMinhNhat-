@@ -78,6 +78,7 @@ function Header(props) {
                 <div className="menu-drop">
                   {userInfo.isAdmin ? <Link to="/admin">Admin</Link> : ""}
                   <Link to="/myOrder">Đơn hàng</Link>
+                  <Link to={`/Updateuser/${userInfo._id}`}>Thông tin khách hàng  </Link>
                   <Link onClick={() => handleSignout()}>Đăng xuất</Link>
                 </div>
               ) : (
